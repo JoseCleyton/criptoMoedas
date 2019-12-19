@@ -8,4 +8,5 @@ import { DashboardComponent } from '../dashboard/dashboard.component';
  */
 export const ROUTES : Routes = [
     {path: '' , component: DashboardComponent},
-    ]
+    {path: 'siglas' , loadChildren: () => import('../lista-siglas/lista-siglas.module').then(m => m.ListaSiglasModule)}
+]
